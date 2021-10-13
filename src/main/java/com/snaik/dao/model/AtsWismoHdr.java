@@ -1,17 +1,131 @@
-//package com.snaik.dao.model;
-//
-//import lombok.Data;
-//
-//import javax.persistence.Column;
-//import javax.persistence.Entity;
-//import javax.persistence.Id;
-//import javax.persistence.Table;
-//
-//@Entity
-//@Data
-//@Table(name = "ats_wismo_hdr")
-//public class AtsWismoHdr {
-//    @Id
-//    @Column(name = "id", nullable = false)
-//    private Long id;
-//}
+package com.snaik.dao.model;
+
+import lombok.Data;
+
+@Data
+public class AtsWismoHdr {
+    private String RETAIL_STORE_ADD2;
+    private String RETAIL_STORE_ADD1;
+    private String RETAIL_STORE_NAME;
+    private String RETAIL_STORE_BANNER;
+    private String ORDER_TOTAL;
+    private String TAX;
+    private String MAN_GIFT_CERT_AMT;
+    private String GIFT_CODE_DISC;
+    private String DISCOUNT;
+    private String TOT_MERCH_AMT;
+    private String SERVICE_CHARGE;
+    private String SUBTOTAL;
+    private String PAYPAL;
+    private String HOUSE_ACCT_NUM;
+    private String LAST_FOUR_CC;
+    private String PAY_METHOD;
+    private String REWARDS_STATUS;
+    private String PASSPORT_STATUS;
+    private String CUSTOMER_SEG;
+    private String BRAND_CODE;
+    private String OCCASION_CODE;
+    private String BILL_COUNTRY;
+    private String BILL_ZIP;
+    private String BILL_STATE;
+    private String BILL_CITY;
+    private String BILL_ADD2;
+    private String BILL_ADD1;
+    private String BILL_LNAME;
+    private String BILL_FNAME;
+    private String RECIPIENT_5;
+    private String RECIPIENT_4;
+    private String RECIPIENT_3;
+    private String RECIPIENT_2;
+    private String RECIPIENT_1;
+    private String ITEM_5;
+    private String ITEM_4;
+    private String ITEM_3;
+    private String ITEM_2;
+    private String ITEM_1;
+    private String ORDER_DATE;
+    private String ORDER_NUM;
+    private String CUS_COUNTRY;
+    private String CUS_ZIP;
+    private String CUS_STATE;
+    private String CUS_CITY;
+    private String CUS_ADD2;
+    private String CUS_ADD1;
+    private String CUS_LNAME;
+    private String CUS_FNAME;
+    private String STATUS;
+    private String DT_MDFD;
+    private String USR_MDFD;
+    private String DT_CRTD;
+    private String USR_CRTD;
+    private String TEST;
+    private String B;
+    private String EMAIL;
+    private String AID;
+    private String EID;
+    private String ID;
+    private String PARENT_ODR_NUMBER;
+    private String CUS_TXT;
+    private String CC_EXPIRE_FLAG;
+    private String CUS_PHONE;
+    private String ACCOUNT_MANAGER_EMAIL;
+    private String ACCOUNT_MANAGER;
+    private String SP_EXP_DT;
+    private String SP_AMOUNT;
+    private String SP_PIN;
+    private String SP_SERIAL;
+    private String ATLAS_ODR_NUMBER;
+    private String IS_REORDER;
+    private String NAPCO_CUST_TYPE;
+    private String RECV_SHOP_CODE;
+    private String SEND_SHOP_CODE;
+    private String RECIPIENT_SEQ_NUMBER;
+    private String CUST_FULL_NAME;
+    private String RECP_FULL_NAME;
+    private String RECP_PHONE;
+    private String LOCATION_CODE;
+    private String RECIPIENT_ENABLE;
+    private String BILL_INFO_ENABLE;
+    private String CUSTOMER_ENABLE;
+    private String MODIFY_ORDER;
+    private String SHOPPER_STATUS;
+    private String CORPORT_EMAIL_ADDRESS;
+    private String ORDER_TYPE;
+    private String LOGON_EMAIL;
+    private String CITY_THANKU_AMT;
+    private String DTW_DESCRIPTION;
+    private String FB_SEND_STATUS;
+    private String THIRD_PARTY_TOKEN2;
+    private String MBP_ORDER;
+    private String TOT_ORDER_AMT;
+    private String TOT_TAX;
+    private String TOT_GIFTCERT_DISC;
+    private String TOT_GIFTCODE_DISC;
+    private String TOT_DISCOUNT;
+    private String TOT_SERVICE_CHG;
+    private String RECP_TXT;
+    private String RECP_COUNTRY;
+    private String RECP_ZIP;
+    private String RECP_STATE;
+    private String RECP_CITY;
+    private String RECP_STR2;
+    private String RECP_STR1;
+    private String RECP_LNAME;
+    private String RECP_FNAME;
+    private String ORDER_SEQ;
+    private String RECP_ID;
+    private String WEB_ORDER_NUMBER;
+    private String SOURCE_ID;
+    private String PO_NUMBER;
+    private String CPY_ABBR;
+    private String ERROR_MESSAGE;
+    private String BATCH_ID;
+    private String NEW_CUST;
+    private String RETAIL_STORE_URL;
+    private String RETAIL_STORE_COUNTRY;
+    private String RETAIL_STORE_ZIP;
+    private String RETAIL_STORE_STATE;
+    private String RETAIL_STORE_CITY;
+    private String SOURCE_TYPE;
+
+}

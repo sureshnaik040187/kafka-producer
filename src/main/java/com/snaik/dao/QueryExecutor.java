@@ -1,5 +1,8 @@
 package com.snaik.dao;
 
+import com.snaik.dao.model.AtsWismoHdr;
+import com.snaik.dao.model.AtsWismoHdrMapper;
+import com.snaik.service.KafkaSender;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
@@ -13,14 +16,18 @@ public class QueryExecutor {
     @Autowired
     private JdbcTemplate jdbcTemplate;
 
+    @Autowired
+    private KafkaSender kafkaSender;
+
     private String query = "select * from ats_wismo_hdr where 1=1 and rownum between 1 and 10";
 
     public void executeQuery(){
         System.out.println("executing query: "+query);
 
-        List<Map<String, Object>> rows = jdbcTemplate.queryForList(query);
-        for (Map row:rows) {
+        List<AtsWismoHdr> rows = jdbcTemplate.query(query, new AtsWismoHdrMapper());
+        for (AtsWismoHdr row:rows) {
             System.out.println("records: "+row.toString());
+            kafkaSender.send(row.toString());
         }
     }
 }
